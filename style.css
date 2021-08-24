@@ -1,0 +1,139 @@
+/*mobile*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+.header {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+}
+
+.search {
+  display: flex;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__element {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.info,
+aside, section {
+  padding: 20px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.info__icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid rgb(205, 209, 215);
+    padding: 5px;
+}
+
+.info__description {
+  margin: 0 0 0 15px;
+}
+
+aside {
+  background-color: #f2f2f2;
+}
+
+.title-famous {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.famous-hotel {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel {
+  display: flex;
+  background-color: white;
+  border: 4px white solid;
+  border-radius: 20px;
+  height: 150px;
+  margin: 5px 0;
+}
+
+article {
+    box-shadow: 0px 2px 8px rgb(180 180 180);
+}
+
+.hotel__image {
+  width: 40%;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+}
+
+.hotel__content {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 10px 15px 30px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.content__title {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+
+.fa-star {
+  color: #0065fc;
+}
+
+.star--inactive {
+  color: #f2f2f2;
+}
+
+.marseille {
+    display: flex;
+    flex-direction: column;
+}
+.accommodation{
+    height: 200px;
+    border-radius: 20px;
+    border: 4px white solid;
+    margin: 10px 0;
+}
+.accommodation__image {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+@media (min-width: 375px) {
+}
