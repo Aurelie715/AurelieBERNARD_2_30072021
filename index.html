@@ -15,13 +15,13 @@
 
 <body>
   <header class="header">
-    <nav class="nav">
-      <p class="nav__logo">
-        <img src="public/Reservia.svg" alt="logo Reservia" />
-      </p>
-      <a href="" class="nav__subscribe">S'inscrire</a>
-      <a href="#hebergement" class="nav__link nav__link--active">Hébergements</a>
-      <a href="#activite" class="nav__link">Activités</a>
+    <img src="public/Reservia.svg" alt="logo Reservia" class="header__logo" />
+    <nav>
+      <a href="" class="login">S'inscrire</a>
+      <ul class="nav">
+        <li class="nav__link nav__link--active"><a href="">Hébergements</a></li>
+        <li class="nav__link"><a href="">Activités</a></li>
+      </ul>
     </nav>
   </header>
   <section>
@@ -35,6 +35,7 @@
       </div>
       <input type="search" class="search__field" placeholder="Marseille, France" />
       <button type="submit" class="search__btn"><i class="fas fa-search"></i></button>
+      <button type="submit" class="search__btn--desktop">Rechercher</button>
     </div>
     <div class="filter">
       <p class="filter__title">Filtres</p>
@@ -262,7 +263,7 @@
   <section>
     <h2 class="title-activities" id="activite">Activités à Marseille</h2>
     <div class="activities">
-      <div class="div-activities">
+      <div class="div-activities--grow">
         <a href="">
           <article class="activity">
             <img src="public/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="image vieux port" class="activity__image">
