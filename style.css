@@ -9,6 +9,12 @@ body {
   font-size: 16px;
 }
 
+.container{
+  min-width: 320px;
+  max-width: 1920px;
+  margin: auto;
+}
+
 ul {
   list-style-type: none;
   display: flex;
@@ -241,7 +247,7 @@ nav a {
 .info {
   display: flex;
   align-items: center;
-  padding: 25px 0 0 0; 
+  padding: 25px 0 0 0;
 }
 
 .info__icon {
@@ -309,7 +315,7 @@ nav a {
 .hotel__content {
   display: flex;
   flex-direction: column;
-  margin: 15px 10px 15px 30px;
+  margin: 10px 10px 10px 25px;
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -317,11 +323,12 @@ nav a {
 .content__title {
   text-decoration: none;
   font-weight: 800;
+  padding: 0 0 5px 0;
 }
 
-.content__byline {
-  line-height: 40px;
-}
+/* .content__byline {
+  line-height: 30px;
+} */
 
 .fa-star {
   font-size: 13px;
@@ -334,7 +341,7 @@ nav a {
 
 /* section hébergement à Marseille */
 
-.title-marseille{
+.title-marseille {
   margin: 0 0 20px 0;
 }
 
@@ -342,6 +349,8 @@ nav a {
   display: flex;
   flex-direction: column;
 }
+
+
 
 .accommodation {
   display: flex;
@@ -403,16 +412,24 @@ nav a {
   height: 70%;
 }
 
+.activity__image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
 .activity__title {
   display: flex;
   align-items: center;
   padding: 20px 0 0 20px;
 }
 
-.activity__image img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 20px 20px 0 0;
+h3 a {
+  display: inline-block;     
+   position: relative;    
+   z-index: 1;     
+   padding: 3em;     
+   margin: -3em;
 }
 
 /* Footer */
@@ -438,15 +455,15 @@ footer ul {
   line-height: 30px;
 }
 
-@media (min-width: 800px) and (max-width: 1920px) {
-  /* responsive desktop */
-  /* header desktop*/
+@media (min-width: 768px) {
+  /* reponsive tablet */
+  /* header tablet*/
   .header {
     flex-wrap: nowrap;
     margin: unset;
   }
 
-  /* menu de navigation desktop */
+  /* menu de navigation tablet */
   nav {
     display: flex;
     justify-content: flex-end;
@@ -475,10 +492,20 @@ footer ul {
     margin: 0 0 0 50px;
   }
 
-  /* barre de recherche desktop */
+  /* filtres tablet */
+  .filter {
+    flex-direction: row;
+    margin: 40px 0 0 0;
+  }
+
+  .filter__title {
+    margin: 0 30px 0 0;
+  }
+
+  /* barre de recherche tablet */
   .search__field {
     flex-grow: 0;
-    width: 20%;
+    width: 30%;
   }
 
   .search__btn--desktop {
@@ -494,36 +521,48 @@ footer ul {
     display: none;
   }
 
-  /* aside les plus populaire desktop */
-  .all-hotels {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
+  /* aside les plus populaire tablet */
+  aside {
+    margin: 0 0 0 0;
   }
 
-  .aside-hotel {
-    flex: 0 0 25%;
-    border-radius: 15px;
+  .famous-hotel {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  .section-hotel {
-    flex: 0 0 60%;
-    background-color: #f2f2f2;
-    border-radius: 15px;
+  .hotel {
+    width: 310px;
+    margin: 15px 0;
   }
 
-  /* section hébergement à Marseille desktop */
+  /* section hébergement à Marseille tablet */
+
   .marseille {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 
-  .accommodation {
-    width: 248px;
+  .marseille-a {
+    flex: 30%;
   }
 
-  /* section activités à Marseilles */
+  .marseille-a:nth-child(3n+1), .marseille-a:nth-child(3n+2) {
+    margin: 0 30px 0 0;
+  }
+
+  .accommodation {
+    /* width: 248px; */
+    margin: 15px 0;
+  }
+
+  /* section activités à Marseilles tablet*/
+  .section-activity {
+    margin: 30px 40px 30px 40px;
+  }
+
   .activities {
     flex-direction: row;
     justify-content: space-between;
@@ -584,8 +623,216 @@ footer ul {
     height: 150px;
   }
 
-/* footer desktop */
+  /* footer tablet */
   .footer {
     flex-direction: row;
+    padding: 20px 0 0 20px;
+  }
+
+  .footer-part {
+    margin: 0 10% 0 0;
+  }
+}
+
+@media (min-width: 1224px){
+  /* responsive desktop */
+  aside,
+  .section-hotel {
+    padding: 50px 30px;
+  }
+
+  /* header desktop*/
+  .header {
+    flex-wrap: nowrap;
+    margin: unset;
+  }
+
+  /* menu de navigation desktop */
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 0px;
+  }
+
+  .nav {
+    margin: 0px;
+  }
+
+  .nav__link {
+    padding: 50px 50px 50px 50px;
+    border-bottom: none;
+  }
+
+  .nav__link--active {
+    border-top: 2px solid #0065fc;
+  }
+
+  .login {
+    order: 1;
+    margin: 0 0 0 50px;
+  }
+
+  /* section find hotel desktop */
+  .find-hotel {
+    padding: unset;
+    margin: 40px 50px 40px 50px;
+  }
+
+  /* filtres desktop */
+  .filter {
+    flex-direction: row;
+    margin: 40px 0 0 0;
+  }
+
+  .filter__title {
+    margin: 0 30px 0 0;
+  }
+
+  /* barre de recherche desktop */
+  .search__field {
+    flex-grow: 0;
+    width: 20%;
+  }
+
+  .search__btn--desktop {
+    display: block;
+    background-color: #0065fc;
+    border-style: none;
+    border-radius: 0 15px 15px 0;
+    color: white;
+    padding: 10px;
+  }
+
+  .search__btn {
+    display: none;
+  }
+
+  /* div aside + section hébergement à Marseille desktop */
+  .all-hotels {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  /* aside les plus populaire desktop */
+  aside {
+    margin: 0 40px 0 0;
+  }
+
+  .aside-hotel {
+    flex: 0 0 25%;
+    border-radius: 15px;
+  }
+
+  .famous-hotel {
+    flex-direction: column;
+    flex-wrap: unset;
+    justify-content: unset;
+  }
+
+  .hotel {
+    width: unset;
+  }
+
+  /* section hébergement à Marseille desktop */
+  .section-hotel {
+    flex: 0 0 58%;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    margin: 0 0 0 40px;
+  }
+
+  .marseille {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .accommodation {
+    /* width: 248px; */
+    margin: 15px 0 15px 0;
+  }
+
+  /* .marseille-a:nth-child(3n+1), .marseille-a:nth-child(3n+2) {
+    margin: 0 30px 0 0;
+  } */
+
+  /* section activités à Marseilles desktop*/
+  .section-activity {
+    margin: 30px 40px 30px 40px;
+  }
+
+  .activities {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .div-activities {
+    height: 450px;
+    flex: 0 0 22%;
+    justify-content: space-between;
+  }
+
+  .activity {
+    height: unset;
+    margin: unset;
+  }
+
+  .activity--fullspace {
+    height: 100%;
+  }
+
+  .activity--fort {
+    height: 240px;
+  }
+
+  .activity--frioul {
+    height: 165px;
+  }
+
+  .activity--garde {
+    height: 195px;
+  }
+
+  .activity--longchamp {
+    height: 210px;
+  }
+
+  .activity__image {
+    height: unset;
+  }
+
+  .activity__image--fullspace {
+    height: 390px;
+  }
+
+  .activity__image--fort {
+    height: 180px;
+  }
+
+  .activity__image--frioul {
+    height: 105px;
+  }
+
+  .activity__image--garde {
+    height: 140px;
+  }
+
+  .activity__image--longchamp {
+    height: 150px;
+  }
+
+  /* footer desktop */
+  .footer {
+    flex-direction: row;
+    padding: 20px 0 0 40px;
+  }
+
+  .footer-part {
+    margin: 0 20% 0 0;
   }
 }
