@@ -11,23 +11,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/2c03516f22.js" crossorigin="anonymous"></script>
   <title>Reservia</title>
+  <meta name="description" content="Reservia - trouver votre hébergement pour des vacances de rêve">
 </head>
 
 <body>
   <div class="container">
     <header class="header">
-      <img src="public/Reservia.svg" alt="logo Reservia" class="header__logo" />
+      <h1>
+        <img class="header__logo" src="public/Reservia.svg"
+          alt="Reservia - trouver votre hébergement pour des vacances de rêve" />
+      </h1>
       <nav>
-        <a href="" class="login">S'inscrire</a>
+        <a href="#" class="login">S'inscrire</a>
         <ul class="nav">
-          <li class="nav__link nav__link--active"><a href="#hebergement">Hébergements</a></li>
-          <li class="nav__link"><a href="#activite">Activités</a></li>
+          <li class="nav__link nav__link--active">
+            <h2><a href="#hebergement">Hébergements</a></h2>
+          </li>
+          <li class="nav__link">
+            <h2><a href="#activite">Activités</a></h2>
+          </li>
         </ul>
       </nav>
     </header>
     <section class="find-hotel">
       <div class="quote">
-        <h1 class="quote__title">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h2 class="quote__title">Trouvez votre hébergement pour des vacances de rêve</h2>
         <p class="quote__bytitle">En plein centre ville ou en pleine nature</p>
       </div>
       <div class="search">
@@ -91,8 +99,8 @@
           <i class="title-famous__icon fas fa-chart-line"></i>
         </div>
         <div class="famous-hotel">
-          <a href="">
-            <article class="hotel">
+          <a href="#">
+            <article class="hotel hotel--white">
               <div class="hotel__image">
                 <img src="public/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" />
               </div>
@@ -111,11 +119,11 @@
               </div>
             </article>
           </a>
-          <a href="">
-            <article class="hotel">
-              <figure class="hotel__image">
+          <a href="#">
+            <article class="hotel hotel--white">
+              <div class="hotel__image">
                 <img src="public/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" />
-              </figure>
+              </div>
               <div class="hotel__content">
                 <div class="content">
                   <h3 class="content__title">Au coeur de l'eau Chambres d'hôtes</h3>
@@ -131,11 +139,11 @@
               </div>
             </article>
           </a>
-          <a href="">
-            <article class="hotel">
-              <figure class="hotel__image">
+          <a href="#">
+            <article class="hotel hotel--white">
+              <div class="hotel__image">
                 <img src="public/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="" />
-              </figure>
+              </div>
               <div class="hotel__content">
                 <div class="content">
                   <h3 class="content__title">Hôtel tout bleu et blanc</h3>
@@ -156,8 +164,8 @@
       <section class="section-hotel">
         <h2 class="title-marseille" id="hebergement">Hébergements à Marseille</h2>
         <div class="marseille">
-          <a class="marseille-a" href="">
-            <article class="accommodation">
+          <a class="marseille-a" href="#">
+            <article class="accommodation accommodation--white">
               <img src="public/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="image auberge la cannebière"
                 class="accommodation__image">
               <div class="accommodation__information">
@@ -173,8 +181,8 @@
               </div>
             </article>
           </a>
-          <a class="marseille-a" href="">
-            <article class="accommodation">
+          <a class="marseille-a" href="#">
+            <article class="accommodation accommodation--white">
               <img src="public/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="image hôtel du port"
                 class="accommodation__image">
               <div class="accommodation__information">
@@ -190,8 +198,8 @@
               </div>
             </article>
           </a>
-          <a class="marseille-a" href="">
-            <article class="accommodation">
+          <a class="marseille-a" href="#">
+            <article class="accommodation accommodation--white">
               <img src="public/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="image hôtel des mouettes"
                 class="accommodation__image">
               <div class="accommodation__information">
@@ -207,8 +215,8 @@
               </div>
             </article>
           </a>
-          <a class="marseille-a" href="">
-            <article class="accommodation">
+          <a class="marseille-a" href="#">
+            <article class="accommodation accommodation--white">
               <img src="public/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hôtel de la mer"
                 class="accommodation__image">
               <div class="accommodation__information">
@@ -224,8 +232,8 @@
               </div>
             </article>
           </a>
-          <a class="marseille-a" href="">
-            <article class="accommodation">
+          <a class="marseille-a" href="#">
+            <article class="accommodation accommodation--white">
               <img src="public/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="image auberge le panier"
                 class="accommodation__image">
               <div class="accommodation__information">
@@ -241,8 +249,8 @@
               </div>
             </article>
           </a>
-          <a class="marseille-a" href="">
-            <article class="accommodation">
+          <a class="marseille-a" href="#">
+            <article class="accommodation accommodation--white">
               <img src="public/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="image hôtel chez amina"
                 class="accommodation__image" />
               <div class="accommodation__information">
@@ -260,17 +268,15 @@
           </a>
         </div>
         <div class="more">
-          <a href="">Afficher plus</a>
+          <a href="#">Afficher plus</a>
         </div>
       </section>
     </div>
     <section class="section-activity">
       <h2 class="title-activities" id="activite">Activités à Marseille</h2>
       <div class="activities">
-
         <div class="div-activities">
-          <!-- <a href=""> -->
-          <a href="" class="activity activity--fullspace">
+          <a href="#" class="activity activity--fullspace">
             <div class="activity__image activity__image--fullspace">
               <img src="public/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="image vieux port">
             </div>
@@ -278,91 +284,76 @@
               <h3>Vieux Port</h3>
             </div>
           </a>
-          <!-- </a> -->
         </div>
         <div class="div-activities">
-          <!-- <a href=""> -->
-          <article class="activity activity--fort">
+          <a href="#" class="activity activity--fort">
             <div class="activity__image activity__image--fort">
               <img src="public/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="image fort de pomègues">
             </div>
             <div class="activity__title">
               <h3>Fort de Pomègues</h3>
             </div>
-          </article>
-          <!-- </a> -->
-          <!-- <a href=""> -->
-          <article class=" activity activity--frioul">
+          </a>
+          <a href="#" class=" activity activity--frioul">
             <div class="activity__image activity__image--frioul">
               <img src="public/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="image îles du frioul">
             </div>
             <div class="activity__title">
               <h3>Îles du Frioul</h3>
             </div>
-          </article>
-          <!-- </a> -->
+          </a>
         </div>
         <div class="div-activities">
-          <!-- <a href=""> -->
-          <article class="activity activity--fullspace">
+          <a href="#" class="activity activity--fullspace">
             <div class="activity__image activity__image--fullspace">
               <img src="public/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="image parc national des calanques">
             </div>
             <div class="activity__title">
               <h3>Parc National des Calanques</h3>
             </div>
-          </article>
-          <!-- </a> -->
+          </a>
         </div>
         <div class="div-activities">
-          <!-- <a href=""> -->
-          <article class="activity activity--garde">
+          <a href="#" class="activity activity--garde">
             <div class="activity__image activity__image--garde">
               <img src="public/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="image notre dame de la garde">
             </div>
             <div class="activity__title">
               <h3>Notre-Dame-de-la-Garde</h3>
             </div>
-          </article>
-          <!-- </a> -->
-          <!-- <a href=""> -->
-          <article class=" activity activity--longchamp">
+          </a>
+          <a href="#" class=" activity activity--longchamp">
             <div class="activity__image activity__image--longchamp">
               <img src="public/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="image parc Longchamp">
             </div>
             <div class="activity__title">
               <h3>Parc Longchamp</h3>
             </div>
-          </article>
-          <!-- </a> -->
+          </a>
         </div>
-
-
-
       </div>
-    </section>
     </section>
     <footer class="footer">
       <div class="footer-part">
         <h3 class="footer-part__title">A propos</h3>
         <ul>
-          <li><a href="" class="footer-part__link">Fonctionnement du site</a></li>
-          <li><a href="" class="footer-part__link">Conditions générales de vente</a></li>
-          <li><a href="" class="footer-part__link">Données et confidentialité</a></li>
+          <li><a href="#" class="footer-part__link">Fonctionnement du site</a></li>
+          <li><a href="#" class="footer-part__link">Conditions générales de vente</a></li>
+          <li><a href="#" class="footer-part__link">Données et confidentialité</a></li>
         </ul>
       </div>
       <div class="footer-part">
         <h3 class="footer-part__title">Nos hébergements</h3>
         <ul>
-          <li><a href="" class="footer-part__link">Charte qualité</a></li>
-          <li><a href="" class="footer-part__link">Soumettre votre hôtel</a></li>
+          <li><a href="#" class="footer-part__link">Charte qualité</a></li>
+          <li><a href="#" class="footer-part__link">Soumettre votre hôtel</a></li>
         </ul>
       </div>
       <div class="footer-part">
         <h3 class="footer-part__title">Assistance</h3>
         <ul>
-          <li><a href="" class="footer-part__link">Centre d'aide</a></li>
-          <li><a href="" class="footer-part__link">Nous contacter</a></li>
+          <li><a href="#" class="footer-part__link">Centre d'aide</a></li>
+          <li><a href="#" class="footer-part__link">Nous contacter</a></li>
         </ul>
       </div>
     </footer>
