@@ -15,15 +15,15 @@ body {
   margin: auto;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 ul {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
-}
-
-a {
-  color: black;
-  text-decoration: none;
 }
 
 h2 {
@@ -81,14 +81,14 @@ nav {
   flex: 100%;
 }
 
-.nav {
-  margin: 60px 0 0 0;
-}
-
 nav a {
   display: flex;
   justify-content: flex-end;
   margin-top: -35px;
+}
+
+.nav {
+  margin: 60px 0 0 0;
 }
 
 .nav__link {
@@ -208,6 +208,10 @@ nav a {
   z-index: 1;
 }
 
+.element:hover .element__icon {
+  background-color: #0065fc;
+}
+
 .fa-money-bill-wave,
 .fa-child,
 .fa-heart,
@@ -216,22 +220,9 @@ nav a {
   font-size: 20px;
 }
 
-.element:hover .element__icon {
-  background-color: #0065fc;
-}
-
-.element:hover .fa-money-bill-wave {
-  color: white;
-}
-
-.element:hover .fa-child {
-  color: white;
-}
-
-.element:hover .fa-heart {
-  color: white;
-}
-
+.element:hover .fa-money-bill-wave,
+.element:hover .fa-child,
+.element:hover .fa-heart,
 .element:hover .fa-dog {
   color: white;
 }
@@ -337,13 +328,13 @@ nav a {
   margin-left: -3px;
 }
 
+.star--inactive {
+  color: rgba(217, 217, 217);
+}
+
 .fa-star {
   font-size: 11px;
   color: #0065fc;
-}
-
-.star--inactive {
-  color: rgba(217, 217, 217);
 }
 
 /* section hébergement à Marseille */
@@ -436,14 +427,6 @@ nav a {
   padding: 20px 0 0 20px;
 }
 
-/* h3 a {
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-  padding: 3em;
-  margin: -3em;
-} */
-
 /* Footer */
 .footer {
   display: flex;
@@ -514,19 +497,6 @@ footer ul {
     margin: 0 0 0 50px;
   }
 
-  /* filtres tablet */
-  .filter {
-    flex-direction: row;
-    margin: 40px 0 0 0;
-  }
-
-  .filter__title {
-    margin: 0 30px 0 0;
-    font-weight: 800;
-    padding: 20px 0 0 0;
-    font-size: 18px;
-  }
-
   /* barre de recherche tablet */
   .search__field {
     flex-grow: 0;
@@ -544,6 +514,19 @@ footer ul {
 
   .search__btn {
     display: none;
+  }
+
+  /* filtres tablet */
+  .filter {
+    flex-direction: row;
+    margin: 40px 0 0 0;
+  }
+
+  .filter__title {
+    margin: 0 30px 0 0;
+    font-weight: 800;
+    padding: 20px 0 0 0;
+    font-size: 18px;
   }
 
   /* aside les plus populaire tablet */
@@ -682,6 +665,11 @@ footer ul {
   }
 
   /* menu de navigation desktop */
+  .login {
+    order: 1;
+    margin: 0 0 0 50px;
+  }
+
   nav {
     display: flex;
     justify-content: flex-end;
@@ -704,11 +692,6 @@ footer ul {
 
   .nav__link--active {
     border-top: 2px solid #0065fc;
-  }
-
-  .login {
-    order: 1;
-    margin: 0 0 0 50px;
   }
 
   /* section find hotel desktop */
@@ -737,6 +720,10 @@ footer ul {
     width: 20%;
   }
 
+  .search__btn {
+    display: none;
+  }
+
   .search__btn--desktop {
     display: block;
     background-color: #0065fc;
@@ -744,10 +731,6 @@ footer ul {
     border-radius: 0 15px 15px 0;
     color: white;
     padding: 10px;
-  }
-
-  .search__btn {
-    display: none;
   }
 
   /* div aside + section hébergement à Marseille desktop */
@@ -795,7 +778,7 @@ footer ul {
     margin: 15px 0 15px 0;
   }
 
-  /* section activités à Marseilles desktop*/
+  /* section activités à Marseilles desktop */
   .section-activity {
     margin: 50px 40px;
   }
