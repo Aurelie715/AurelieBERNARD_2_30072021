@@ -328,13 +328,13 @@ nav a {
   margin-left: -3px;
 }
 
-.star--inactive {
-  color: rgba(217, 217, 217);
-}
-
 .fa-star {
   font-size: 11px;
   color: #0065fc;
+}
+
+.star--inactive {
+  color: rgba(217, 217, 217);
 }
 
 /* section hébergement à Marseille */
